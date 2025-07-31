@@ -252,7 +252,7 @@ function! s:setDictionaries()
         \ 'zsh'      : '󱆃',
         \ 'ksh'      : '󱆃',
         \ 'csh'      : '󱆃',
-        \ 'awk'      : '',
+        \ 'awk'      : '',
         \ 'ps1'      : '',
         \ 'ml'       : '',
         \ 'mli'      : '',
