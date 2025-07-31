@@ -206,7 +206,6 @@ function! s:setDictionaries()
         \ 'toml'     : '',
         \ 'bat'      : '',
         \ 'cmd'      : '',
-        \ 'ps1'      : '',
         \ 'mk'       : '',
         \ 'jpg'      : '',
         \ 'jpeg'     : '',
