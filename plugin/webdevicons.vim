@@ -238,6 +238,7 @@ function! s:setDictionaries()
         \ 'nix'      : '',
         \ 'lua'      : '',
         \ 'java'     : '',
+        \ 'kt'       : '',
         \ 'sh'       : '',
         \ 'fish'     : '',
         \ 'bash'     : '',
