@@ -81,7 +81,7 @@ call s:set('g:WebDevIconsTabAirLineAfterGlyphPadding', '')
 "========================================================================
 
 call s:set('g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol', '')
-call s:set('g:WebDevIconsUnicodeByteOrderMarkerDefaultSymbol', '')
+call s:set('g:WebDevIconsUnicodeByteOrderMarkerDefaultSymbol', '')
 call s:set('g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol', g:DevIconsEnableFoldersOpenClose ? '' : '')
 call s:set('g:WebDevIconsUnicodeDecorateFolderNodesSymlinkSymbol',  '')
 call s:set('g:DevIconsDefaultFolderOpenSymbol', '')
@@ -110,11 +110,13 @@ function s:getDistro()
     elseif s:lsb =~# 'Gentoo'
       let s:distro = ''
     elseif s:lsb =~# 'Ubuntu'
-      let s:distro = ''
+      let s:distro = '󰕈'
     elseif s:lsb =~# 'Cent'
       let s:distro = ''
     elseif s:lsb =~# 'Debian'
       let s:distro = ''
+    elseif s:lsb =~# 'Deepin'
+      let s:distro = ''
     elseif s:lsb =~# 'Dock'
       let s:distro = ''
     else
@@ -217,7 +219,7 @@ function! s:setDictionaries()
         \ 'cc'       : '',
         \ 'cp'       : '',
         \ 'c'        : '',
-        \ 'cs'       : '',
+        \ 'cs'       : '󰌛',
         \ 'h'        : '',
         \ 'hh'       : '',
         \ 'hpp'      : '',
@@ -251,9 +253,9 @@ function! s:setDictionaries()
         \ 'xul'      : '',
         \ 'sln'      : '',
         \ 'suo'      : '',
-        \ 'pl'       : '',
-        \ 'pm'       : '',
-        \ 't'        : '',
+        \ 'pl'       : '',
+        \ 'pm'       : '',
+        \ 't'        : '',
         \ 'rss'      : '',
         \ 'f#'       : '',
         \ 'fsscript' : '',
@@ -278,15 +280,15 @@ function! s:setDictionaries()
         \ 'tsx'      : '',
         \ 'jl'       : '',
         \ 'pp'       : '',
-        \ 'vue'      : '﵂',
+        \ 'vue'      : '󰡄',
         \ 'elm'      : '',
         \ 'swift'    : '',
         \ 'xcplayground' : '',
-        \ 'tex'      : 'ﭨ',
-        \ 'r'        : 'ﳒ',
-        \ 'rproj'    : '鉶',
-        \ 'sol'      : 'ﲹ',
-        \ 'pem'      : ''
+        \ 'tex'      : '󰙩',
+        \ 'r'        : '󰟔',
+        \ 'rproj'    : '󰗆',
+        \ 'sol'      : '󰡪',
+        \ 'pem'      : '󰌋'
         \}
 
   let s:file_node_exact_matches = {
@@ -316,7 +318,7 @@ function! s:setDictionaries()
         \ '.bashprofile'                     : '',
         \ 'favicon.ico'                      : '',
         \ 'license'                          : '',
-        \ 'node_modules'                     : '',
+        \ 'node_modules'                     : '',
         \ 'react.jsx'                        : '',
         \ 'procfile'                         : '',
         \ 'dockerfile'                       : '',
@@ -326,7 +328,7 @@ function! s:setDictionaries()
         \ 'gemfile'                          : '',
         \ 'makefile'                         : '',
         \ 'cmakelists.txt'                   : '',
-        \ 'robots.txt'                       : 'ﮧ'
+        \ 'robots.txt'                       : '󰚩'
         \}
 
   let s:file_node_pattern_matches = {
@@ -338,7 +340,7 @@ function! s:setDictionaries()
         \ '.*materialize.*\.css$' : '',
         \ '.*mootools.*\.js$'     : '',
         \ '.*vimrc.*'             : '',
-        \ 'Vagrantfile$'          : ''
+        \ 'Vagrantfile$'          : ''
         \}
 
   if !exists('g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols')
@@ -531,7 +533,8 @@ function! WebDevIconsGetFileTypeSymbol(...) abort
     if symbol == g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol
       if has_key(g:WebDevIconsUnicodeDecorateFileNodesExactSymbols, fileNode)
         let symbol = g:WebDevIconsUnicodeDecorateFileNodesExactSymbols[fileNode]
-      elseif ((isDirectory == 1 && g:DevIconsEnableFolderExtensionPatternMatching) || isDirectory == 0) && has_key(g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols, fileNodeExtension)
+      elseif ((isDirectory == 1 && g:DevIconsEnableFolderExtensionPatternMatching) || isDirectory == 0)
+            \ && has_key(g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols, fileNodeExtension)
         let symbol = g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols[fileNodeExtension]
       elseif isDirectory == 1
         let symbol = g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol
