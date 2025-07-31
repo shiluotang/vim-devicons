@@ -281,7 +281,6 @@ function! s:setDictionaries()
         \ 'fsi'      : '',
         \ 'rs'       : '',
         \ 'rlib'     : '',
-        \ 'jl'       : '',
         \ 'zig'      : '',
         \ 'lisp'     : '',
         \ 'd'        : '',
