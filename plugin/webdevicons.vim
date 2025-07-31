@@ -201,6 +201,7 @@ function! s:setDictionaries()
         \ 'hbs'      : '',
         \ 'conf'     : '',
         \ 'ini'      : '',
+        \ 'properties' : '',
         \ 'yml'      : '',
         \ 'yaml'     : '',
         \ 'toml'     : '',
