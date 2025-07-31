@@ -203,6 +203,7 @@ function! s:setDictionaries()
         \ 'ini'      : '',
         \ 'properties' : '',
         \ 'config'   : '',
+        \ 'cfg'      : '',
         \ 'xml'      : '󰗀',
         \ 'yml'      : '',
         \ 'yaml'     : '',
