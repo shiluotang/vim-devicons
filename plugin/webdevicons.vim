@@ -270,6 +270,9 @@ function! s:setDictionaries()
         \ 'xul'      : '',
         \ 'sln'      : '',
         \ 'suo'      : '',
+        \ 'vcxproj'  : '',
+        \ 'vcproj'   : '',
+        \ 'cmake'    : '',
         \ 'pl'       : '',
         \ 'pm'       : '',
         \ 't'        : '',
@@ -311,6 +314,7 @@ function! s:setDictionaries()
         \ 'stl'      : '󰨖',
         \ 'vtt'      : '󰨖',
         \ 'exe'      : '',
+        \ 'apk'      : '',
         \ 'dll'      : '',
         \ 'so'       : '',
         \ 'lib'      : '',
@@ -325,10 +329,15 @@ function! s:setDictionaries()
         \ 'rar'      : '',
         \ 'z'        : '',
         \ 'iso'      : '',
+        \ 'vhd'      : '󰋊',
+        \ 'vhdx'     : '󰋊',
+        \ 'vdi'      : '󰋊',
+        \ 'qcow2'    : '󰋊',
         \ 'doc'      : '󱎒',
         \ 'docx'     : '',
         \ 'xls'      : '󱎏',
         \ 'xlsx'     : '',
+        \ 'csv'      : '',
         \ 'mdb'      : '󱎎',
         \ 'accdb'    : '󱎎',
         \ 'ttf'      : '󰛖',
@@ -383,8 +392,9 @@ function! s:setDictionaries()
         \ 'rakefile'                         : '',
         \ 'config.ru'                        : '',
         \ 'gemfile'                          : '',
-        \ 'makefile'                         : '',
-        \ 'cmakelists.txt'                   : '',
+        \ 'makefile'                         : '',
+        \ 'makefile2'                        : '',
+        \ 'cmakelists.txt'                   : '',
         \ 'robots.txt'                       : '󰚩'
         \}
 
@@ -396,6 +406,7 @@ function! s:setDictionaries()
         \ '.*materialize.*\.js$'  : '',
         \ '.*materialize.*\.css$' : '',
         \ '.*mootools.*\.js$'     : '',
+        \ '.*\.js\.map$'          : '',
         \ '.*vimrc.*'             : '',
         \ 'Vagrantfile$'          : ''
         \}
