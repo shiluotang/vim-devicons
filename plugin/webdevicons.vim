@@ -274,6 +274,7 @@ function! s:setDictionaries()
         \ 'vcproj'   : '󰘐',
         \ 'vcxproj'  : '󰘐',
         \ 'csproj'   : '󰘐',
+        \ 'nupkg'    : '',
         \ 'cmake'    : '',
         \ 'pl'       : '',
         \ 'pm'       : '',
