@@ -208,6 +208,7 @@ function! s:setDictionaries()
         \ 'xml'      : '󰗀',
         \ 'yml'      : '',
         \ 'yaml'     : '',
+        \ 'xaml'     : '󰙳',
         \ 'toml'     : '',
         \ 'bat'      : '',
         \ 'cmd'      : '',
